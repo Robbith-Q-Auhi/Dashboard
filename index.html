@@ -3,34 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Home Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
         }
+
         .container {
             max-width: 400px;
-            margin: auto;
-            padding: 20px;
+            margin: 50px auto;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
         button {
             display: block;
             width: 100%;
             padding: 15px;
             margin: 10px 0;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             background-color: #007bff;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s ease;
         }
+
         button:hover {
             background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            background-color: #004085;
+            transform: translateY(0);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px;
+            }
         }
     </style>
 </head>
@@ -38,10 +70,10 @@
 
     <div class="container">
         <h2>Dashboard</h2>
-        <button onclick="window.location.href='https://script.google.com/macros/s/AKfycbxIRLgyfBNCucxoFhbHXmGkb2g7OIQZugEp7Kc2c9M8y-6Co5TFT5pcjWVS7p_8gcGZ/exec'">
+        <button onclick="window.location.href='https://script.google.com/macros/s/AKfycbzsAOuDrhOQ3JAD8ViFl5ycE2-axAtA3R-ZIwHlNez-9zKv-38j5uS5SEOmV-Ex3EIo/exec'">
             Masuk
         </button>
-        <button onclick="window.location.href='https://script.google.com/macros/s/AKfycbxIRLgyfBNCucxoFhbHXmGkb2g7OIQZugEp7Kc2c9M8y-6Co5TFT5pcjWVS7p_8gcGZ/exec?page=keluar'">
+        <button onclick="window.location.href='https://script.google.com/macros/s/AKfycbzsAOuDrhOQ3JAD8ViFl5ycE2-axAtA3R-ZIwHlNez-9zKv-38j5uS5SEOmV-Ex3EIo/exec?page=keluar'">
             Keluar
         </button>
     </div>
